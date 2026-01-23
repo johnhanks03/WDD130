@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300;400;600&display=swap');
+
+:root {
+  --primary-color: #878371;
+  --secondary-color: #72795F;
+  --accent1-color: #354A1D;
+  --accent2-color: #D7C184;
+
+  --heading-font: 'Bebas Neue', sans-serif;
+  --paragraph-font: 'Oswald', sans-serif;
+}
+
+/* ---------- GLOBAL ---------- */
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: var(--paragraph-font);
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+  background-color: var(--accent1-color);
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  width: 80px;
+}
+
+nav {
+  margin-left: auto;
+  display: flex;
+  background-color: var(--accent2-color);
+}
+
+nav a {
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-family: var(--heading-font);
+}
+
+nav a:hover {
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
+}
+
+/* ---------- HERO ---------- */
+
+#hero {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#hero-box {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#hero-img {
+  width: 100%;
+}
+
+#hero-msg {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  align-self: center;
+  text-align: center;
+  color: white;
+}
+
+.home-title {
+  font-family: var(--heading-font);
+  font-size: 3rem;
+}
+
+.button-box {
+  margin-top: 1rem;
+}
+
+.book {
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent2-color);
+  color: var(--accent1-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ---------- HOME GRID ---------- */
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.card-img {
+  border: 5px solid var(--accent2-color);
+}
+
+.icon {
+  width: 60px;
+  margin: 0 auto;
+}
+
+/* ---------- MOUNTAINS ---------- */
+
+.mountains {
+  grid-column: 1/4;
+}
+
+/* ---------- MESSAGE ---------- */
+
+.msg {
+  grid-column: 2/4;
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
+  padding: 2rem;
+}
+
+.join {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--accent2-color);
+  color: var(--accent1-color);
+  text-decoration: none;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer {
+  background-color: var(--accent1-color);
+  color: var(--accent2-color);
+  padding: 1rem;
+  text-align: center;
+}
+
+footer a {
+  color: var(--accent2-color);
+  text-decoration: none;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social img {
+  width: 40px;
+}
