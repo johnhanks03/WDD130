@@ -157,6 +157,34 @@ footer a:hover {
 .text-block p:last-child {
   margin-bottom: 0;
 }
+/* SERVICES PAGE */
+
+.services-page {
+  display: grid;
+  gap: 40px;
+}
+
+.service-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  background-color: white;
+  padding: 35px;
+  box-shadow: 5px 5px 10px #d6d6d6;
+}
+.reverse-row {
+  grid-template-columns: 1fr 1fr;
+}
+.service-text {
+  padding: 10px;
+}
+
+.service-image img {
+  height: 300px;
+  object-fit: cover;
+  box-shadow: 5px 5px 10px #6f7364;
+}
 
 @media screen and (max-width: 900px) {
   header {
