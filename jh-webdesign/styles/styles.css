@@ -13,6 +13,18 @@
   --nav-hover-background-color: #3a5a78;
 }
 
+.hero-card {
+  position: relative;
+  height: 430px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-card img {
+  display: none;
+}
 * {
   box-sizing: border-box;
 }
@@ -184,6 +196,84 @@ footer a:hover {
   height: 300px;
   object-fit: cover;
   box-shadow: 5px 5px 10px #6f7364;
+}
+/* CONTACT PAGE */
+.top-image,
+.bottom-image {
+  margin-bottom: 35px;
+}
+
+.top-image img,
+.bottom-image img {
+  height: 320px;
+  object-fit: cover;
+  box-shadow: 5px 5px 10px #6f7364;
+}
+.contact-intro,
+.contact-expect {
+  background-color: white;
+  padding: 30px 40px;
+  box-shadow: 5px 5px 10px #d6d6d6;
+  margin-bottom: 35px;
+  text-align: center;
+}
+.contact-form-section {
+  background-color: var(--accent1-color);
+  padding: 50px 20px;
+  margin-bottom: 35px;
+  box-shadow: 5px 5px 10px #d6d6d6;
+}
+form {
+  width: 100%;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+form ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 16px;
+}
+label {
+  display: block;
+  margin-bottom: 6px;
+  text-align: left;
+  font-weight: 600;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 14px;
+  font: 1em var(--paragraph-font);
+  border: 1px solid #b8c4cf;
+  background-color: white;
+}
+
+textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+.button {
+  text-align: center;
+}
+button {
+  font-size: 1.1em;
+  margin-top: 10px;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 14px 28px;
+  cursor: pointer;
+  font-family: var(--paragraph-font);
+}
+button:hover {
+  background-color: #27435c;
 }
 
 @media screen and (max-width: 900px) {
